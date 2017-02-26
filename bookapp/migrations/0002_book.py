@@ -9,7 +9,7 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('webapp', '0001_initial'),
+        ('bookapp', '0001_initial'),
     ]
 
     operations = [
@@ -18,7 +18,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('book_name', models.CharField(max_length=30)),
-                ('author', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='webapp.Author')),
+                ('author', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='bookapp.Author')),
             ],
         ),
     ]
